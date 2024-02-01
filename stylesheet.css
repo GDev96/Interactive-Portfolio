@@ -1,3 +1,76 @@
 body {
-    background-color: #101B37; /*sfondo: blu scuro*/
+    background: url(Resources/background.jpg); /*sfondo: blu scuro*/
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    padding: 10%;
+}
+
+@font-face {
+    font-family: 'FutureTechno';
+    src: url(Resources/future_techno/FutureTechno.ttf);
+}
+
+.title_container{
+    background-color: #101B37;
+    align-items: baseline;
+    border: 2px solid #E41476;
+    border-radius: 25px;
+    width: fit-content;
+    max-width:none;
+    padding: 5%;
+    box-shadow: 0 0 5px #02C8ED,
+        0 0 25px#02C8ED,
+        0 0 50px #02C8ED;
+}
+
+.title {
+    font-family: 'FutureTechno', sans-serif;
+    font-size: 45pt;
+    color: #E41476;
+    padding: 10px 25px;
+    position: relative;
+    margin-top: 10%;
+    margin-inline: center; 
+    text-align: center;    
+} 
+
+.subtitle {
+    font-family: 'FutureTechno', sans-serif;
+    font-size: 36pt;
+    color: #E41476;
+    padding: 10px 25px;
+    position: relative;   
+    text-align: center;
+} 
+
+.buttonContainer{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cvButton{
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 35px;
+    width: 150px;
+    color: #E41476;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    padding: 20px 20px;
+    margin: 40px 0;
+    transition: 0.5s;
+    
+}
+
+:hover.cvButton{
+    background: #02C8ED;
+    color: #101B37;
+    font-weight: bold;
+    box-shadow: 0 0 5px #02C8ED,
+        0 0 25px#02C8ED,
+        0 0 50px #02C8ED;
+
 }
