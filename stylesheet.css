@@ -16,15 +16,34 @@ body {
     src: url(Resources/drawfly-go-font/DrawflyGo-w1ly2.otf);
 }
 
-.title_container{
+/*navbar*/
+.header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: #101B37;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+    color:#E41476;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+.navbar .ul{
+    justify-content: space-between;
+}
+
+.container{
     background-color: transparent;
     backdrop-filter: blur(8px);
     align-items: baseline;
     border: 2px solid #E41476;
     border-radius: 25px;
-    width: fit-content;
-    max-width:none;
-    padding: 5%;
+    padding: 20px;
     box-shadow: 0 0 5px #02C8ED,
         0 0 25px#02C8ED,
         0 0 50px #02C8ED;
@@ -35,8 +54,9 @@ body {
     font-size: 45pt;
     color: #E41476;
     position: relative;
-    margin-top: 10%;
+    margin-top: 45%;
     text-align: center; 
+    text-shadow: 0px 5px #02C8ED;
     /*-webkit-box-reflect: below; *//*riflesso del titolo*/  
 } 
 
@@ -50,10 +70,10 @@ body {
 } 
 
 .buttonContainer{
-    padding: 1%;
-    display: flex;
+    padding: 20px;
+    display: flex; /*centra il pulsante*/
+    margin-bottom: 0;
     justify-content: center;
-
 }
 
 .cvButton{
@@ -62,12 +82,13 @@ body {
     border-radius: 35px;
     width: 150px;
     color: #E41476;
+    box-shadow: 0px 5px 15px #E41476;
     background-color: #101B37;
     position: relative;
     text-align: center;
     align-items: center;
     padding: 20px 20px;
-    margin: 40px 0;
+    margin-top: 20%;
     transition: 0.5s;
     
 }
@@ -80,4 +101,16 @@ body {
         0 0 25px#02C8ED,
         0 0 50px #02C8ED;
 
+}
+
+/*sezione progetti*/
+.section_title{
+    font-family: 'Courier New';
+    font-size: 24pt;
+    font-weight: bold;
+    color: #E41476;
+    padding: 10px 25px;
+    position: relative;   
+    text-align: leftr;
+    text-shadow: 0px 5px #101B37;
 }
