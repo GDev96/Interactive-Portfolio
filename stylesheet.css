@@ -25,6 +25,7 @@ body {
     width: 100%;
     border-radius: 25px;
     overflow: hidden;
+    justify-content: center
 }
 
 .navbar .ul{
@@ -35,10 +36,13 @@ a{
     color:#E41476;
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
+    text-decoration: none;
+    
 }
 
-:hover.a{
+:hover .a{
     font-weight: bold;
+    border:#02C8ED
 }
 
 .container{
@@ -105,22 +109,86 @@ a{
     box-shadow: 0 0 5px #02C8ED,
         0 0 25px#02C8ED,
         0 0 50px #02C8ED;
-
 }
 
 /*sezione progetti*/
-.section_title{
+.section_title{ /*titolo progetti e contatti*/
     font-family: 'Courier New';
     font-size: 24pt;
     font-weight: bold;
     color: #E41476;
-    padding: 10px 25px;
+    width: 100%;
+    padding: 15px 0px 30px;
     position: relative;   
     text-align: left;
     text-shadow: 0px 5px #101B37;
 }
 
 /*sezione contatti*/
+.form{
+   padding-right: 10px;
+}
+
+/*input cognome, email*/
+.infobox{
+    width: 100%;
+    height: auto;
+    min-height: 15%;
+    background-color: #101B37;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: #E41476;
+    padding: 3px;
+}
+
+.messagebox{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-color: #101B37;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: #E41476;
+    padding: 3px;
+}
+
+.sendButtonContainer{
+    padding: 10px;
+    padding-top: 15px;
+    align-items: baseline;
+}
+
+.sendButton{
+    border-radius: 35px;
+    width: 150px;
+    box-shadow: 0px 5px 20px #E41476;
+    background-color: #101B37;
+
+    /*posiziona il pulsante a destra*/
+    position: absolute;
+    right: 25px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #E41476;
+    text-align: center;
+    padding: 20px 20px;
+
+    transition: 0.5s; 
+}
+
+:hover.sendButton{
+    background: #02C8ED;
+    color: #101B37;
+    font-weight: bold;
+    box-shadow: 0 0 5px #02C8ED,
+        0 0 25px#02C8ED,
+        0 0 50px #02C8ED;
+}
 
 /*sezione icone*/
 /*contenitore icone*/
