@@ -1,85 +1,97 @@
 <!DOCTYPE html>
 
-<html>
+<html lang = "it">
     <head>
+        <!--TO DO: inserire meta-->
+
         <title>fratg.developer</title>
-        <link rel="stylesheet" href="C:\Users\fratt\Documents\GitHub\Interactive-Portfolio\stylesheet.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="./stylesheet.css">
     </head>
     <body>
-        <nav class="navbar">
-            <ul>
-                <a href=""> Home </a>
-                <a href=""> Progetti </a>
-                <a href=""> Contatti </a>
+        <!--navbar verticale-->
+        <div class="navbar">
+            <ul> 
+                <a href="home">  </a>
+                <a href="project">  </a>
+                <a href="contact">  </a>
             </ul>
-        </nav>
-        <!--sezione home-->
-        <section style="margin-top: 50px;">
-            <div class="container">
-                <div class="title" >
-                    Fratg.dev
-                </div>
-                <div class="subtitle">
-                    front-end developer
-                </div>
-                <div class="buttonContainer">
-                    <div class="cvButton">
-                        Download cv
+        </div>
+        <main class="content">
+            <!--sezione home-->
+            <section style="margin-top: 50px;">
+                <div class="container">
+                    <div class="subcontainer">
+                        <div class="title">
+                            Fratg.dev
+                        </div>
+                        <div class="subtitle">
+                            front-end developer
+                        </div>
+                        <div class="version">
+                            versione 1.0
+                        </div>
+                    </div>
+                    <!--Pulsante download cv-->
+                    <div class="buttonContainer">
+                        <div class="cvButton">
+                            Download cv
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--sezione progetti-->
-        <section style="margin-top: 50px;">
-            <div class = "container">
-                <div class = "section_title">
-                    Progetti
+            </section>
+            <!--sezione progetti-->
+            <section style="margin-top: 50px;">
+                <div class = "container">
+                    <div class = "section_title">
+                        Progetti
+                    </div>
+                    <div class="carousel">
+                        <!--div carousel-->
+                    </div>
+                    <div class="skills level">
+                        <!--livell abilità in percentuali-->
+                    </div>
                 </div>
-                <div class="carousel">
-                    <!--div carousel-->
-                </div>
-                <div class="skills level">
-
-                </div>
-            </div>
-        </section>
-        <!--sezione contatti-->
-        <section style= "margin-top: 50px;">
-            <div class = "container">
-                <div class = "section_title">
-                    Contattami
-                </div>
-                <div class="form">
-                    <!--form di compilazione per e-mail-->
-                    <!--<div class="nameContainer">-->
-                        <input type="text" class="infobox">
-                            <!--nome-->
-                        </input>
-                        <input type="text"class="infobox">
-                            <!--cognome-->
-                        </input>
-                    <!--</div>-->
-                        <input type="email" class="infobox">
-                            <!--E-mail-->
-                        </input>
-                        <input type="text" class="messagebox">
-                            <!--Messaggio-->
-                        </input>
-                        <div class="sendButtonContainer">
-                            <div class="sendButton">
-                                Invio
+            </section>
+            <!--sezione contatti-->
+            <section style= "margin-top: 50px;">
+                <div class = "container">
+                    <div class = "section_title">
+                        Contattami
+                    </div>
+                    <div class="form">
+                        <!--form di compilazione per e-mail-->
+                        <!--<div class="nameContainer">-->
+                            <input type="text" class="infobox" title="Nome">
+                                <!--nome-->
+                            </input>
+                            <input type="text"class="infobox">
+                                <!--cognome-->
+                            </input>
+                        <!--</div>-->
+                            <input type="email" class="infobox">
+                                <!--E-mail-->
+                            </input>
+                            <input type="text" class="messagebox">
+                                <!--Messaggio-->
+                            </input>
+                            <div class="sendButtonContainer">
+                                <div class="sendButton">
+                                    Invio
+                                </div>
                             </div>
-                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!--sezione icone social-->
-        <section style= "margin-top:  50px;">
-            <div class="icons">
-                <div class="icon">
+            </section>
+            <!--sezione icone social-->
+            <section style= "margin-top:  50px;">
+                <div class="icons">
+                    <div class="icon">
 
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
     </body>
 </html>
