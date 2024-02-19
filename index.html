@@ -2,96 +2,102 @@
 
 <html lang = "it">
     <head>
-        <!--TO DO: inserire meta-->
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
         <title>fratg.developer</title>
         <script src="script.js"></script>
         <link rel="stylesheet" href="./stylesheet.css">
     </head>
     <body>
         <!--navbar verticale-->
-        <div class="navbar">
+        <div class="navbar right">
             <ul> 
-                <a href="home">  </a>
-                <a href="project">  </a>
-                <a href="contact">  </a>
+                <a href="#home"></a>
+                <a href="#project"></a>
+                <a href="#contact"></a>
             </ul>
         </div>
-        <main class="content">
-            <!--sezione home-->
-            <section style="margin-top: 50px;">
-                <div class="container">
-                    <div class="subcontainer">
-                        <div class="title">
-                            Fratg.dev
-                        </div>
-                        <div class="subtitle">
-                            front-end developer
-                        </div>
-                        <div class="version">
-                            versione 1.0
-                        </div>
+        <div class="navbar left">
+            <ul> 
+                <a href="#home"></a>
+                <a href="#project"></a>
+                <a href="#contact"></a>
+            </ul>
+        </div>
+        <!--sezione home-->
+        <section id="home" style="margin-top: 50px;">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="title">
+                        Fratg.dev
                     </div>
-                    <!--Pulsante download cv-->
-                    <div class="buttonContainer">
-                        <div class="cvButton">
-                            Download cv
-                        </div>
+                    <div class="subtitle">
+                        front-end developer
                     </div>
-                </div>
-            </section>
-            <!--sezione progetti-->
-            <section style="margin-top: 50px;">
-                <div class = "container">
-                    <div class = "section_title">
-                        Progetti
-                    </div>
-                    <div class="carousel">
-                        <!--div carousel-->
-                    </div>
-                    <div class="skills level">
-                        <!--livell abilità in percentuali-->
+                    <div class="version">
+                        versione 1.0
                     </div>
                 </div>
-            </section>
-            <!--sezione contatti-->
-            <section style= "margin-top: 50px;">
-                <div class = "container">
-                    <div class = "section_title">
-                        Contattami
+                <!--Pulsante download cv-->
+                <div class="buttonContainer">
+                    <div class="cvButton">
+                        Download cv
                     </div>
-                    <div class="form">
-                        <!--form di compilazione per e-mail-->
-                        <!--<div class="nameContainer">-->
-                            <input type="text" class="infobox" title="Nome">
-                                <!--nome-->
-                            </input>
-                            <input type="text"class="infobox">
-                                <!--cognome-->
-                            </input>
-                        <!--</div>-->
-                            <input type="email" class="infobox">
-                                <!--E-mail-->
-                            </input>
-                            <input type="text" class="messagebox">
-                                <!--Messaggio-->
-                            </input>
-                            <div class="sendButtonContainer">
-                                <div class="sendButton">
-                                    Invio
-                                </div>
+                </div>
+            </div>
+        </section>
+        <!--sezione progetti-->
+        <section id="project" style="margin-top: 50px;">
+            <div class = "container">
+                <div class = "section_title">
+                    Progetti
+                </div>
+                <div class="carousel">
+                    <!--div carousel-->
+                </div>
+                <div class="skills level">
+                    <!--livell abilità in percentuali-->
+                </div>
+            </div>
+        </section>
+        <!--sezione contatti-->
+        <section id="contact" style= "margin-top: 50px;">
+            <div class = "container">
+                <div class = "section_title">
+                    Contattami
+                </div>
+                <div class="form">
+                    <!--form di compilazione per e-mail-->
+                    <!--<div class="nameContainer">-->
+                        <input type="text" class="infobox" title="Nome">
+                            <!--nome-->
+                        </input>
+                        <input type="text"class="infobox">
+                            <!--cognome-->
+                        </input>
+                    <!--</div>-->
+                        <input type="email" class="infobox">
+                            <!--E-mail-->
+                        </input>
+                        <input type="text" class="messagebox">
+                            <!--Messaggio-->
+                        </input>
+                        <div class="sendButtonContainer">
+                            <div class="sendButton">
+                                Invio
                             </div>
-                    </div>
+                        </div>
                 </div>
-            </section>
-            <!--sezione icone social-->
-            <section style= "margin-top:  50px;">
-                <div class="icons">
-                    <div class="icon">
+            </div>
+        </section>
+        <!--sezione icone social-->
+        <section style= "margin-top:  50px;">
+            <div class="icons">
+                <div class="icon">
 
-                    </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
     </body>
 </html>
