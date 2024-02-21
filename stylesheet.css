@@ -20,15 +20,6 @@ body {
     overflow: hidden; /*nasconde la scrollbar*/
 }
 
-section{
-    height: 100vh;
-    display: grid;
-    align-items: center; 
-    justify-content: center;
-    flex: 1;
-    padding: 0px 50px;
-}
-
 /*vertical-navbar*/
 .navbar{
     position: fixed;
@@ -43,11 +34,11 @@ section{
 }
 
 .navbar.right{
-    right: 50px;
+    right: 30px;
 }
 
 .navbar.left{
-    left: 50px;
+    left: 30px;
 }
 
 a{
@@ -70,22 +61,39 @@ a:hover{
                 0 0 50px #02C8ED;
 }
 
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    padding: 0px 50px;
+    margin: 0 auto;
+    width: calc(100% - 10%);
+}
+
 /*contenitori*/
 .container{
     display: flex;
     flex-direction: column; /*tiene gli elementi in colonna*/ /* Altezza massima */
+    align-items: space-between;
     height: 85vh; 
     width: 75vw;
-    max-width: 70%;
+    max-height: 80%;
+    max-width: 60%;
 
     background-color: transparent;
     backdrop-filter: blur(5px);
     border: 2px solid #E41476;
     border-radius: 25px;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 0 5px #02C8ED,
                 0 0 25px#02C8ED,
                 0 0 50px #02C8ED;
+}
+
+.subcontainer{
+    flex-grow: 2; /*occupa 2/3 dello spazio*/
 }
 
 .title {
@@ -118,6 +126,11 @@ a:hover{
 }
 
 .buttonContainer{
+    flex-grow: 1; /*occupa 1/3 dello spazio*/
+
+}
+
+.buttonform{
     display: flex; /*centra il pulsante*/
     justify-content: center;
     padding-bottom: 5%;
