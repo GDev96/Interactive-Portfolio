@@ -34,11 +34,11 @@ body {
 }
 
 .navbar.right{
-    right: 30px;
+    right: 5%;
 }
 
 .navbar.left{
-    left: 30px;
+    left: 5%;
 }
 
 a{
@@ -150,6 +150,7 @@ section{
     align-items: center;
     padding: 20px 20px;
     margin-top: 10%;
+    margin-bottom: 10%;
     transition: 0.5s;
     
 }
@@ -163,8 +164,7 @@ section{
         0 0 50px #02C8ED;
 }
 
-/*sezione progetti*/
-.section_title{ /*titolo progetti e contatti*/
+.section_title{ /*titoli sezioni*/
     font-family: 'Courier New';
     font-size: 24pt;
     font-weight: bold;
@@ -176,9 +176,42 @@ section{
     text-shadow: 0px 5px #101B37;
 }
 
-.skillsLevel{
+/*sezione skills*/
+.skills{
     border-top: #E41476;
 }
+
+.skillgrid{
+    display: flex;
+    flex-direction: row;
+}
+
+.nameskill{
+    font-family: 'Courier New';
+    font-size: 14pt;
+    color: #E41476;
+    width: 50%;
+    padding: 10px;
+    position: relative;   
+    text-align: left;
+}
+
+.progress-bar  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: 
+        radial-gradient(closest-side, #101B37 79%, transparent 80% 100%), 
+        conic-gradient(#02C8ED 30%, #101B37 0);
+    
+    margin: 10%;
+  }
+
+/*aezione portfolio*/
 
 /*sezione contatti*/
 .form{
