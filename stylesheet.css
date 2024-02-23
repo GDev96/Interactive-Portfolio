@@ -176,7 +176,7 @@ section{
     text-shadow: 0px 5px #101B37;
 }
 
-/*sezione skills*/
+/*----------------sezione skill----------------*/
 .skills{
     border-top: #E41476;
 }
@@ -184,8 +184,8 @@ section{
 .skillProgress{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-evenly;
-    
 }
 
 .skill{
@@ -196,22 +196,14 @@ section{
 }
 
 .circle{
-    /*
-    width: 100px;
-    height: 100px;
-    z-index: 0;
-    background-color: #02C8ED;
-    border-radius: 50%;
-    */
-    fill: none;
-    stroke:#02C8ED;
-    stroke-width: 30px;
+    /*TODO: contenuto progress bar circolare*/
     
 }
 
 .outer{ /*cerchio esterno della progressbar*/
     width: 100px;
     height: 100px;
+    background-color: #101B37;
     border:1px solid #E41476;
     box-shadow: 0px 5px 10px#E41476;
     border-radius: 50%;
@@ -232,28 +224,18 @@ section{
     justify-content: center;
 }
 
-.progress-bar{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    background-color: #02C8ED;
-    transform-origin: center;
-    transform: rotate(calc(90deg * 0.75));  
-}
-
 .nameskill{
     font-family: 'Courier New';
     font-size: 14pt;
     font-weight: bold;
     color: #E41476;
+    transition: all 0.5s ease; /* Definizione della transizione */
 }
 
 
-/*aezione portfolio*/
+/*---------------aezione portfolio----------------------------*/
 
-/*sezione contatti*/
+/*---------------sezione contatti-----------------------------*/
 .form{
    padding-right: 10px;
 }
@@ -274,6 +256,9 @@ section{
 
 .infobox .title{
     /*stile prompt*/
+    font-family: 'Courier New', Courier, monospace;
+    color: #E41476;
+    padding: 3px;
 }
 
 .messagebox{
@@ -323,19 +308,7 @@ section{
         0 0 50px #02C8ED;
 }
 
-/*sezione icone*/
-/*contenitore icone*/
-icons{  
+/*-------------sezione icone-----------------------*/
 
-}
-
-/*singola icona*/
-icon{
-
-}
-
-:hover.icon{
-
-}
 
 /*--------------------------------*/
