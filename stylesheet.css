@@ -181,14 +181,60 @@ section{
     border-top: #E41476;
 }
 
-.skillgrid{
+.skillProgress{
     display: flex;
     flex-direction: row;
+}
+
+.skill{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.circle{
+    /*
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    background-color: #02C8ED;
+    border-radius: 50%;
+    */
+    fill: none;
+    stroke:#02C8ED;
+    stroke-width: 30px;
+    
+}
+
+.outer{ /*cerchio esterno della progressbar*/
+    width: 100px;
+    height: 100px;
+    border:1px solid #E41476;
+    box-shadow: 0px 5px 10px#E41476;
+    border-radius: 50%;
+    /*centrano inner*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner{ /*cerchio interno della progressbar*/
+    width: 70px;
+    height: 70px;
+    border:1px solid #E41476;
+    border-radius: 50%;
+    /*centrano il numero all'interno della progressbar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
 }
 
 .nameskill{
     font-family: 'Courier New';
     font-size: 14pt;
+    font-weight: bold;
     color: #E41476;
     width: 50%;
     padding: 10px;
@@ -196,31 +242,6 @@ section{
     text-align: left;
 }
 
-.progress-bar-c, .progress-bar-sql, .progress-bar-java {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: radial-gradient(closest-side, #101B37 79%, transparent 80% 100%), 
-    conic-gradient(#02C8ED 30%, #101B37 0);
-    margin: 10%;
-  }
-
-  .progress-bar-html, .progress-bar-css {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: radial-gradient(closest-side, #101B37 79%, transparent 80% 100%), 
-    conic-gradient(#02C8ED 50%, #101B37 0);
-    margin: 10%;
-  }
 
 /*aezione portfolio*/
 
