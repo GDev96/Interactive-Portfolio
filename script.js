@@ -13,3 +13,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//Carosello progetti

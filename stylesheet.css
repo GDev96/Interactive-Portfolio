@@ -170,40 +170,50 @@ section{
     font-weight: bold;
     color: #E41476;
     width: 100%;
-    padding: 15px 0px 30px;
+    padding: 10px 10px;
     position: relative;   
     text-align: left;
     text-shadow: 0px 5px #101B37;
 }
 
 /*----------------sezione skill----------------*/
-.skills{
-    border-top: #E41476;
-}
 
-.skillProgress{
+.skillProgress{ /*sub-container progressbar*/
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-content: space-evenly;
     justify-content: space-evenly;
+    align-items: center;
+    /*scrollbar*/
+    overflow: scroll; 
+    scrollbar-width: none; 
+
 }
 
 .skill{
     width: 100px;
     height: 100px;
     position: relative;
-    padding: 10px 10px ;
+    padding: 20px 20px ;
 }
 
-.circle{
-    /*TODO: contenuto progress bar circolare*/
-    
+.outer40{ /*cerchio esterno della progressbar*/
+    width: 110px;
+    height: 110px;
+    background-image: conic-gradient(#02C8ED 0deg, #02C8ED 140deg,#101B37 140deg, #101B37 360deg);
+    border:1px solid #E41476;
+    box-shadow: 0px 5px 10px#E41476;
+    border-radius: 50%;
+    /*centrano inner*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.outer{ /*cerchio esterno della progressbar*/
-    width: 100px;
-    height: 100px;
-    background-color: #101B37;
+.outer25{ /*cerchio esterno della progressbar*/
+    width: 110px;
+    height: 110px;
+    background-image: conic-gradient(#02C8ED 0deg, #02C8ED 90deg,#101B37 90deg, #101B37 360deg);
     border:1px solid #E41476;
     box-shadow: 0px 5px 10px#E41476;
     border-radius: 50%;
@@ -216,8 +226,10 @@ section{
 .inner{ /*cerchio interno della progressbar*/
     width: 70px;
     height: 70px;
+    background-color: #101B37;
     border:1px solid #E41476;
     border-radius: 50%;
+    padding:5px;
     /*centrano il numero all'interno della progressbar*/
     display: flex;
     align-items: center;
@@ -232,8 +244,84 @@ section{
     transition: all 0.5s ease; /* Definizione della transizione */
 }
 
+#grad25{
+    background-color: conic-gradient(#101B37, #02C8ED);
+}
 
 /*---------------aezione portfolio----------------------------*/
+
+.project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: hsl(223, 55%, 14%);
+    border-radius: 10px;
+    padding: 10px 10px;
+    height: 100%;
+}
+
+.nameProject{
+    font-family: 'Courier New', Courier, monospace;
+    color: #E41476;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.icon, .description{
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    padding: 10px 10px;
+}
+
+.description{
+    padding: 10px 10px;
+}
+
+.descriptionText{
+    font-family: 'Courier New', Courier, monospace;
+    color: #E41476;
+    font-size: 10pt;
+    padding-top: 10px;
+}
+
+.links{
+    justify-content: end;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+
 
 /*---------------sezione contatti-----------------------------*/
 .form{
