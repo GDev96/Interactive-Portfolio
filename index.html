@@ -138,22 +138,23 @@
                     <!--div catchstars-->
                     <div class="project">
                         <div class="icon">
-                            <img src="/Resources/Catchstars_icon-playstore.png" style="width: 100px; height: 100px;">
+                            <img class="iconProject" src="Resources/Catchstars_icon-playstore.png" alt="applicazione catchstars" style="width: 100px; height: 100px;">
                             <text class="nameProject"> CatchStars!</text>
                         </div>
                         <div class="description">
                             <div class="descrip-container">
-                                <text class="descriptionText">Descrizione</text>
+                                <text class="descriptionText">
+                                    Progetto accademico. Applicazione Android sviluppata in Kotlin.
+                                    L'utente, muovendosi nello spazio, raccoglie gli oggetti presenti sulla mappa, i cui dati associati vengono salvati in
+                                    un database.
+                                    Implementazione tramite l'utilizzo di API Google Maps.
+                                </text>
                             </div>
                             <div class="links">
-                                <img src="/Resources/github-icon.png" href="" style="width: 50px; height: 50px;">
+                                <a class="github-icon" href="https://github.com/GDev96/CatchStars"><img src="Resources/github-icon.png" alt="icona github" style="width: 30px; height: 30px;"></a>
                             </div>
                         </div>
                     </div>
-
-                    <!--pulsanti prev/next-->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
                 </div>
 
@@ -168,17 +169,10 @@
                 </div>
                 <div class="form">
                     <!--form di compilazione per e-mail-->
-                        <input type="text" class="infobox">
-                        </input>
-                        <input type="text"class="infobox">
-                            <!--cognome-->
-                        </input>
-                        <input type="email" class="infobox">
-                            <!--E-mail-->
-                        </input>
-                        <input type="text" class="messagebox">
-                            <!--Messaggio-->
-                        </input>
+                        <input type="text" class="infobox" placeholder="Nome"></input>
+                        <input type="text"class="infobox" placeholder="Cognome"></input>
+                        <input type="email" class="infobox" placeholder="E-mail"></input>
+                        <input type="text" class="messagebox" placeholder="Scrivi un messaggio..."></input>
                         <div class="sendButtonContainer">
                             <div class="sendButton">
                                 Invio
