@@ -12,18 +12,18 @@
         <!--navbars verticali-->
         <div class="navbar right">
             <ul> 
-                <a href="#home"></a>
-                <a href="#skills"></a>
-                <a href="#project"></a>
-                <a href="#contact"></a>
+                <a class="dots" href="#home"></a>
+                <a class="dots" href="#skills"></a>
+                <a class="dots" href="#project"></a>
+                <a class="dots" href="#contact"></a>
             </ul>
         </div>
         <div class="navbar left">
             <ul> 
-                <a href="#home"></a>
-                <a href="#skills"></a>
-                <a href="#project"></a>
-                <a href="#contact"></a>
+                <a class="dots" href="#home"></a>
+                <a class="dots" href="#skills"></a>
+                <a class="dots" href="#project"></a>
+                <a class="dots" href="#contact"></a>
             </ul>
         </div>
 
@@ -45,7 +45,7 @@
                 <div class="buttonContainer">
                     <div class="buttonform">
                         <div class="cvButton">
-                            Download cv
+                            <a href="Resources/CV_Gaia_02-24.pdf" style="text-decoration: none;">Download cv</a>
                         </div>
                     </div>
                 </div>
@@ -167,18 +167,16 @@
                 <div class = "section_title">
                     Contattami
                 </div>
-                <div class="form">
+                <form id="myForm" action="mailto:fratg.dev@gmail.com" method="post" enctype="text/plain">
                     <!--form di compilazione per e-mail-->
-                        <input type="text" class="infobox" placeholder="Nome"></input>
-                        <input type="text"class="infobox" placeholder="Cognome"></input>
-                        <input type="email" class="infobox" placeholder="E-mail"></input>
-                        <input type="text" class="messagebox" placeholder="Scrivi un messaggio..."></input>
-                        <div class="sendButtonContainer">
-                            <div class="sendButton">
-                                Invio
-                            </div>
-                        </div>
-                </div>
+                    <input type="text" class="infobox" placeholder="Nome" required></input>
+                    <input type="text"class="infobox" placeholder="Cognome" required></input>
+                    <input type="email" class="infobox" placeholder="E-mail" required></input>
+                    <textarea type="text" class="messagebox" placeholder="Scrivi un messaggio..." required></textarea>
+                    <div class="sendButtonContainer">
+                        <input type="submit" class="sendButton" value="Invio" onclick="submitForm(event)">
+                    </div>
+                </form>
             </div>
         </section>
         <!--sezione icone social-->
