@@ -1,3 +1,5 @@
+//TODO: Cursore personalizzato
+
 //Percentuali skill
 document.addEventListener('DOMContentLoaded', function() {
     const nameskills = document.querySelectorAll('.nameskill');
