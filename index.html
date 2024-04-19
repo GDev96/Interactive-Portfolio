@@ -12,15 +12,15 @@
         <!--navbar-->
         <nav>
             <ul> 
-                <il><a class="menubutton" href="#home">Home</a></il>
-                <il><a class="menubutton" href="#skills">Skills</a></il>
-                <il><a class="menubutton" href="#project">Projects</a></il>
-                <il><a class="menubutton" href="#contact">Contact</a></il>            
+                <il><a class="menubutton" href="#home">Home</a></il> <!--href="/index.html"-->
+                <il><a class="menubutton" href="#skills">Skills</a></il> <!--href="/routes/skill.html"-->
+                <il><a class="menubutton" href="#project">Projects</a></il> <!--href="/routes/projects.html"-->
+                <il><a class="menubutton" href="#contact">Contact</a></il> <!--href="/routes/contact.html"-->           
             </ul>
         <nav>
 
         <!--sezione home-->
-        <section id="home" style="margin-top: 50px;">
+        <section id="home" style="margin-top: 35px;">
             <div class="container">
                 <div class="subcontainer">
                     <div class="title">
@@ -139,7 +139,7 @@
                                     Progetto accademico. L'utente, muovendosi nello spazio, raccoglie gli oggetti presenti sulla mappa, i cui dati associati vengono salvati in
                                     un database. Implementazione tramite l'utilizzo di API Google Maps.
                                 
-                                    Competenze acquisite: Kotlin, AndroidStudio
+                                    Competenze utilizzate: Kotlin, AndroidStudio
                                 </text>
                                 <!--TODO: inserire icone competenze e cancellare ultima frase-->
                             </div>
@@ -158,9 +158,9 @@
                         <div class="description">
                             <div class="descrip-container">
                                 <text class="descriptionText">
-                                    Sito web di divulgazione scientifica in ambito astronomico.
+                                    Progetto formativo. Sito web di divulgazione scientifica in ambito astronomico.
                                     Per la progettazione è stata adottata una metodologia AGILE attraverso l'utilizzo di Trello.
-                                    Competenze acquisite: HTML, TailwindCSS, JavaScript, TypeScript, Svelte. 
+                                    Competenze utilizzate: HTML, TailwindCSS, JavaScript, TypeScript, Svelte. 
                                 </text>
                             </div>
                             <div class="links">
@@ -172,8 +172,8 @@
                 </div>
 
                 <div class="buttonCarouselContainer">
-                    <button>Prev</button>
-                    <button>Next</button>
+                    <button onclick="preSlider()">Prev</button>
+                    <button onclick="postSlider()">Next</button>
                 </div>
                 
 

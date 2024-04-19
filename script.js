@@ -1,5 +1,6 @@
 //TODO: Cursore personalizzato
 
+//TODO: transizione route
 
 //Percentuali skill
 document.addEventListener('DOMContentLoaded', function() {
@@ -16,5 +17,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//TODO: pulsanti slider
+
+let count = 0;
+
+function preSlider(){
+    if(count === -1)
+        count = 1;
+    else
+        count -= 1;
+}
+
+function postSlider(){
+    if(count === 2)
+        count = 0;
+    else
+        count += 1;
+}
 
 // TODO: invio email
